@@ -1,0 +1,102 @@
+*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0;} 
+html,body{
+	width: 100%;
+	height: 100%;
+}
+#slidewrapper{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.slides{
+	width: 100%;
+	height: 100%;
+	
+}
+.slides ul{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.slides ul li{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-size: cover;
+	opacity: 0;
+}
+.slides ul li.dangxem{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-size: cover;
+	opacity: 1;
+}
+.nuts{
+	position: absolute;
+	z-index: 9;
+	top: 85%;
+	right: 45%;
+
+}
+.nuts b{
+	font-size: 70px;
+	color: gray;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+.nuts b:hover{
+	color: #9bb6bf;
+}
+.bienMatKhiAnNext{animation: ani1 1s forwards;}
+@-webkit-keyframes ani1{
+	from{
+		transform: scale(1);
+		opacity: 1;
+	}
+	to{
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+.diVaoKhiAnNext{animation: ani2 1s forwards;}
+@-webkit-keyframes ani2{
+	from{
+		transform: scale(0.7);
+		opacity: 0;
+	}
+	to{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+.bienMatKhiAnPrev {animation: ani2_nguoc 1s forwards;}
+@-webkit-keyframes ani2_nguoc {
+	from{
+		transform: scale(1);
+		opacity: 1;
+	}
+	to{
+		transform: scale(0.7);
+		opacity: 0;
+	}
+}
+.diVaoKhiAnPrev{
+	animation: ani1_nguoc 1s forwards;
+}
+@-webkit-keyframes ani1_nguoc{
+	from{
+		transform: scale(2);
+		opacity: 0;
+	}
+	to{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
